@@ -1,0 +1,152 @@
+.user-container h1 {
+    text-align: center;
+}
+
+.user-rooms {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.user-buttons{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.user-buttons button{
+    
+width: 170px;
+height: 45px;
+font-weight: 700;
+padding: 10px;
+box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+}
+.user-buttons button:first-child{
+
+    background-color: #4caf50;
+}
+.user-buttons button:last-child{
+
+    background-color: gray;
+}
+
+.bedroom,
+.kitchen {
+    width: 50%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border: 1px solid black;
+    margin: 40px;
+}
+
+.bedroom h2,
+.kitchen h2 {
+    text-align: center;
+}
+
+.lightdiv {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 150px;
+}
+
+.lightdiv h3 {
+    font-size: 23px;
+}
+
+.custom-toggle-button {
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.custom-toggle-button .ant-switch-handle {
+    width: 28px;
+    height: 26px;
+}
+
+.ant-switch.ant-switch-checked .ant-switch-handle {
+    inset-inline-start: calc(84% - 20px);
+}
+
+.custom-toggle-button .ant-switch-handle::before {
+    border-radius: 15px !important;
+}
+
+
+.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+    background-color: #4caf50;
+
+}
+.bedroom-buttons{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+.bedroom-buttons Button{
+width: 170px;
+font-weight: 700;
+padding: 10px;
+box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.bedroom-buttons Button:first-child{
+background-color: #4caf50;
+}
+.bedroom-buttons Button:last-child{
+background-color: gray;
+}
+@media (max-width: 768px) {
+    .user-rooms {
+        flex-direction: column;
+    }
+
+    .bedroom,
+    .kitchen {
+        width: 85%;
+        margin: 20px;
+    }
+
+    .lightdiv {
+        width: 90%;
+        gap: 70px;
+    }
+    .bedroom-buttons{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    .user-buttons{
+       width: 44%;
+       flex-direction: column;
+       margin-top: 20px;
+       gap: 20px;
+    
+    }
+}
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
+    .user-rooms {
+        width: 90%;
+        
+    }
+    .bedroom,
+.kitchen {
+    width: 43%;
+    margin: 30px;
+}
+.lightdiv {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 80px;
+}
+}

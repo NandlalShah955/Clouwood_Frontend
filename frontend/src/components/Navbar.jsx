@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiSearch, FiHeart } from 'react-icons/fi';
 import '../styles/Navbar.css'; 
 
 
@@ -67,13 +66,13 @@ const Navbar = () => {
         <div className={`nav-elements ${showNavbar ? 'active' : ''}`}>
           <ul>
             <li>
-              <Link to="/" className="menu-item" >
-                Home
+              <Link to="/User-1" className="menu-item" >
+                User1
               </Link>
             </li>
             <li>
-              <Link to="/coursesform" className="menu-item">
-                Course Management
+              <Link to="/User-2" className="menu-item">
+                User2
               </Link>
             </li>
            
