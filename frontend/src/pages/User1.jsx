@@ -1,6 +1,7 @@
 import React from 'react'
 import Bedroom from '../components/Bedroom';
 import Kitchen from '../components/Kitchen';
+import MyButton from '../components/MyButton';
 import { Button } from 'antd';
 import "../styles/Styles.css";
 
@@ -12,10 +13,7 @@ const User1 = () => {
           <Bedroom />
           <Kitchen />
         </div>
-        <div className='user-buttons'>
-          <Button>All ON</Button>
-          <Button>All OFF</Button>
-        </div>
+          <MyButton />
       </div>
   )
 }

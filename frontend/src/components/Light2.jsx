@@ -1,17 +1,27 @@
-import React from 'react'
-import { Switch } from 'antd';
-const Light2 = () => {
+
+import React from "react";
+import { Switch } from "antd";
+import { useDispatch } from "react-redux";
+import socket from "../services/socket";
+
+const Light2 = ({ lightState, room, light }) => {
+  const dispatch = useDispatch();
+
   const onChange = (checked) => {
-    console.log(`switch to ${checked}`);
+    dispatch({ type: "UPDATE_STATE", payload: { [room]: { [light]: checked } } });
+    socket.emit("toggleSwitch", { room, light, state: checked });
   };
+
   return (
-    <div className='lightdiv'>
-         <h3>
-           Light2
-         </h3>
-         <Switch className="custom-toggle-button" onChange={onChange} />
-       </div>
-  )
-}
+    <div className="lightdiv">
+      <h3>Light 2</h3>
+      <Switch
+        className="custom-toggle-button"
+        checked={lightState}
+        onChange={onChange}
+      />
+    </div>
+  );
+};
 
 export default Light2;
