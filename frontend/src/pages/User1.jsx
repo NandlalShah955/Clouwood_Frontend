@@ -2,7 +2,6 @@ import React from 'react'
 import Bedroom from '../components/Bedroom';
 import Kitchen from '../components/Kitchen';
 import MyButton from '../components/MyButton';
-import { Button } from 'antd';
 import "../styles/Styles.css";
 
 const User1 = () => {
